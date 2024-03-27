@@ -53,10 +53,15 @@ img {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .title {
@@ -66,6 +71,20 @@ img {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* -------Header-------*/
@@ -225,37 +244,21 @@ img {
 /*-------Features-------*/
 
 .features {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .features-item {
-  width: calc((100% - 3 * 24px) / 4);
-}
-
-.features-wrap-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-  margin-bottom: 8px;
-}
-
-.features-icon {
-  fill: #f4f4fd;
+  width: 100%;
 }
 
 .features-subtitle {
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 36px;
+  text-align: center;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -263,16 +266,13 @@ img {
 }
 
 .features-item-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 /*-------Team-------*/
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-title {
@@ -301,18 +301,7 @@ img {
   padding-bottom: 32px;
 }
 
-.team-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
 .team-item-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
@@ -349,8 +338,6 @@ img {
 
 .portfolio {
   background-color: #ffffff;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -389,8 +376,6 @@ img {
 
 .portfolio-cover-text {
   position: absolute;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #4d5ae5;
   padding: 40px 32px;
@@ -407,18 +392,7 @@ img {
   padding: 32px 16px;
 }
 
-.portfolio-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
 .portfolio-item-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /*-------Footer-------*/
@@ -455,8 +429,6 @@ img {
 }
 
 .footer-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
 }
@@ -467,8 +439,6 @@ img {
 
 .footer-social-text {
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
 }
@@ -493,8 +463,6 @@ img {
 
 .footer-form-text {
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #ffffff;
   display: block;
   margin-bottom: 16px;
@@ -795,4 +763,76 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
+}
+
+/*-------Media-------*/
+
+@media (max-width: 1158px) {
+  .features-wrap-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .features-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .features-subtitle {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .features-list {
+    gap: 24px;
+  }
+
+  .features-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .features-wrap-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .features-icon {
+    fill: #f4f4fd;
+  }
+
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .features-item-text {
+    font-weight: 400;
+  }
 }
