@@ -37,6 +37,8 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -275,18 +277,25 @@ img {
   background-color: #f4f4fd;
 }
 
+.team-container {
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
 .team-title {
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 3 * 24px) / 4);
+  width: 100%;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -790,6 +799,20 @@ img {
   .features-subtitle {
     text-align: left;
   }
+
+  .team-container {
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
 }
 
 @media (min-width: 1158px) {
@@ -834,5 +857,14 @@ img {
 
   .features-item-text {
     font-weight: 400;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4); 
   }
 }
