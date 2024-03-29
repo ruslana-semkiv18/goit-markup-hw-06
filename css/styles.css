@@ -427,6 +427,10 @@ img {
   align-items: baseline;
 }
 
+.footer-wrap {
+  display: flex;
+}
+
 .footer-logo-wrap {
   margin-right: 120px;
 }
@@ -478,6 +482,9 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-form-wrap {
 }
 
 .footer-form-text {
@@ -543,6 +550,58 @@ img {
   fill: #ffffff;
   margin-left: 16px;
 }
+
+/* @media (max-width: 767px;) {
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  .footer-logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  
+  .footer-text {
+    max-width: 288px;
+  }
+
+  .footer-social-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+.footer-form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  }
+  
+  .footer-form-input {
+    width: 288px;}
+} */
 
 /*-------Modal-------*/
 
@@ -866,6 +925,40 @@ img {
   .portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+
+  /* 
+  .footer-container {
+    display: block;
+    padding-left: 108px;
+  }
+
+  .footer-wrap {
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 72px;
+  }
+
+  .footer-logo-wrap {
+    display: block;
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+
+  .footer-logo {
+    display: inline-block;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-social-wrap {
+    display: block;
+  }
+
+  .footer-social-text {
+
+  } */
 }
 
 @media (min-width: 1158px) {
